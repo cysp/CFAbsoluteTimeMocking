@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BF_42457333A7FF674C7410DD0CC703FC73 /* CFAbsoluteTimeMocking.h in Headers */ = {isa = PBXBuildFile; fileRef = FR_172419FA28D8DE6F0E9FCA43BC198D9D /* CFAbsoluteTimeMocking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF_71AA8A1ECEECEEB9F470EC7A3A69A8C8 /* dyld-interposing.h in Headers */ = {isa = PBXBuildFile; fileRef = FR_392046D5297E53044AEF4B9863C153B8 /* dyld-interposing.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BF_CA5A43B548E0CDA3EB391A2B457063D3 /* CFAbsoluteTimeMocking.m in Sources */ = {isa = PBXBuildFile; fileRef = FR_81A8837E6A78A70721DB96E3F9455EEC /* CFAbsoluteTimeMocking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FR_172419FA28D8DE6F0E9FCA43BC198D9D /* CFAbsoluteTimeMocking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFAbsoluteTimeMocking.h; sourceTree = "<group>"; };
+		FR_392046D5297E53044AEF4B9863C153B8 /* dyld-interposing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dyld-interposing.h"; sourceTree = "<group>"; };
 		FR_3A2AEA5CEFE34413FC92FE04A488125A /* CFAbsoluteTimeMocking.dylib */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; path = CFAbsoluteTimeMocking.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_81A8837E6A78A70721DB96E3F9455EEC /* CFAbsoluteTimeMocking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFAbsoluteTimeMocking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,8 +41,18 @@
 			isa = PBXGroup;
 			children = (
 				G_403199B37481A8A1F702CFC2FA1463AE /* CFAbsoluteTimeMocking */,
+				G_7A1B8D473E2E4DBD04E0D661032663C8 /* private */,
 				G_4E67EB79A0D2BE7190A84FA2A4EE0E11 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		G_7A1B8D473E2E4DBD04E0D661032663C8 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				FR_392046D5297E53044AEF4B9863C153B8 /* dyld-interposing.h */,
+			);
+			name = private;
+			path = CFAbsoluteTimeMocking/private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -51,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF_42457333A7FF674C7410DD0CC703FC73 /* CFAbsoluteTimeMocking.h in Headers */,
+				BF_71AA8A1ECEECEEB9F470EC7A3A69A8C8 /* dyld-interposing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

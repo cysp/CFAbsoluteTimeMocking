@@ -5,3 +5,7 @@ targets:
         platform: iOS
         sources:
             - path: CFAbsoluteTimeMocking
+              excludes:
+                  - private/.*
+            - path: CFAbsoluteTimeMocking/private
+              headerVisibility: private

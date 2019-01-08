@@ -1,16 +1,5 @@
 #import "CFAbsoluteTimeMocking.h"
-
-static CFTimeInterval XXXCFAbsoluteTimeGetCurrent(void);
-
-typedef struct interpose_s {
-    void *new_func;
-    void *orig_func;
-} interpose_t;
-
-__attribute__((used)) static const interpose_t interposing_functions[] \
-__attribute__ ((section("__DATA,__interpose"))) = {
-    { (void *)XXXCFAbsoluteTimeGetCurrent,  (void *)CFAbsoluteTimeGetCurrent  }
-};
+#import "private/dyld-interposing.h"
 
 static NSMutableArray<NSNumber *> *CFAbsoluteTimeGetCurrentStack = nil;
 
@@ -23,6 +12,7 @@ static CFTimeInterval XXXCFAbsoluteTimeGetCurrent(void) {
     NSLog(@"CFAbsoluteTimeGetCurrent interposed without value");
     return CFAbsoluteTimeGetCurrent();
 }
+DYLD_INTERPOSE(XXXCFAbsoluteTimeGetCurrent, CFAbsoluteTimeGetCurrent)
 
 
 @implementation CFAbsoluteTimeMocking
