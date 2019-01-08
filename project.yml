@@ -3,3 +3,5 @@ targets:
     CFAbsoluteTimeMocking:
         type: library.dynamic
         platform: iOS
+        sources:
+            - path: CFAbsoluteTimeMocking

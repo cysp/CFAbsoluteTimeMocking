@@ -6,11 +6,27 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BF_42457333A7FF674C7410DD0CC703FC73 /* CFAbsoluteTimeMocking.h in Headers */ = {isa = PBXBuildFile; fileRef = FR_172419FA28D8DE6F0E9FCA43BC198D9D /* CFAbsoluteTimeMocking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF_CA5A43B548E0CDA3EB391A2B457063D3 /* CFAbsoluteTimeMocking.m in Sources */ = {isa = PBXBuildFile; fileRef = FR_81A8837E6A78A70721DB96E3F9455EEC /* CFAbsoluteTimeMocking.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		FR_172419FA28D8DE6F0E9FCA43BC198D9D /* CFAbsoluteTimeMocking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFAbsoluteTimeMocking.h; sourceTree = "<group>"; };
 		FR_3A2AEA5CEFE34413FC92FE04A488125A /* CFAbsoluteTimeMocking.dylib */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; path = CFAbsoluteTimeMocking.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FR_81A8837E6A78A70721DB96E3F9455EEC /* CFAbsoluteTimeMocking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFAbsoluteTimeMocking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		G_403199B37481A8A1F702CFC2FA1463AE /* CFAbsoluteTimeMocking */ = {
+			isa = PBXGroup;
+			children = (
+				FR_172419FA28D8DE6F0E9FCA43BC198D9D /* CFAbsoluteTimeMocking.h */,
+				FR_81A8837E6A78A70721DB96E3F9455EEC /* CFAbsoluteTimeMocking.m */,
+			);
+			path = CFAbsoluteTimeMocking;
+			sourceTree = "<group>";
+		};
 		G_4E67EB79A0D2BE7190A84FA2A4EE0E11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -22,17 +38,30 @@
 		G_5583F57CC8BA0172037752E4F4AA65FD = {
 			isa = PBXGroup;
 			children = (
+				G_403199B37481A8A1F702CFC2FA1463AE /* CFAbsoluteTimeMocking */,
 				G_4E67EB79A0D2BE7190A84FA2A4EE0E11 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		HBP_9C584760A77F0D6D2DDC3AF7587C6B36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF_42457333A7FF674C7410DD0CC703FC73 /* CFAbsoluteTimeMocking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		NT_7E2C9C357C306849A23FE0C5DF7AC224 /* CFAbsoluteTimeMocking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CL_5C871BA0586E4951168952D36974D396 /* Build configuration list for PBXNativeTarget "CFAbsoluteTimeMocking" */;
 			buildPhases = (
+				HBP_9C584760A77F0D6D2DDC3AF7587C6B36 /* Headers */,
 				SBP_8272407F61D4DC7F539D1AB474DD6AE8 /* Sources */,
 			);
 			buildRules = (
@@ -73,6 +102,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF_CA5A43B548E0CDA3EB391A2B457063D3 /* CFAbsoluteTimeMocking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
