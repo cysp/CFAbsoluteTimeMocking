@@ -1,0 +1,5 @@
+name: CFAbsoluteTimeMocking
+targets:
+    CFAbsoluteTimeMocking:
+        type: library.dynamic
+        platform: iOS
